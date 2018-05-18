@@ -51,7 +51,7 @@ Topics for learning/discussion with each maze
 - It would be a lot of work to write "go forward" nine times
 - So you can repeat commands, or groups of commands:
   - `repeat ## times:`
-  - ```
+```
 do:
   --
   --
