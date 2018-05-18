@@ -1,0 +1,68 @@
+body {
+  font: 1.2em "Roboto", sans-serif;
+}
+
+.commands {
+  width: 20em;
+}
+.commands tr {
+  height: 2.5em;
+}
+.commands td {
+  border-bottom: 2px solid #333;
+}
+
+.map {
+  float: left;
+  border: 2px solid #333;
+  margin: 0em 2em 0em 2em;
+  border-spacing: 0px;
+}
+.map tr {
+  height: 64px;
+}
+.map td {
+  width: 64px;
+  background-repeat: no-repeat;
+  background-color: #c0c0c8;
+  background-size: contain;
+}
+.start {
+  background-image: url("../images/start.svg");
+}
+.end {
+  background-image: url("../images/end.svg");
+}
+.tile {
+  background-image: url("../images/tile.svg");
+}
+.wall {
+  background-image: url("../images/wall.svg");
+}
+
+h1 {
+  margin: 1em 0em .5em 2em;
+}
+
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@media print {
+  header, .noprint {
+    display:none
+  }
+
+  table, tr, td {
+    -webkit-print-color-adjust: exact;
+  }
+
+  @page {
+    size: auto;
+    margin: 0;
+  }
+}
