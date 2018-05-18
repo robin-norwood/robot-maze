@@ -27,12 +27,12 @@ Time: 25-45 minutes
 
 ### Further exploration
 
-1. Websites like (scratch)[https://scratch.mit.edu/] and (hour of code)[https://hourofcode.com/us] are good next steps.
+1. Websites like [scratch](https://scratch.mit.edu/) and [hour of code](https://hourofcode.com/us) are good next steps.
 2. More advanced students can explore the code that generates the maps, and make their own changes.
   - Create your own map
   - Add a "pit" obstacle
   - Add a "drill" add-on that your robot can pick up and use once
-3. For students interested in creating games, (Phaser)[https://phaser.io/] is a good framework to start with.
+3. For students interested in creating games, [Phaser](https://phaser.io/) is a good framework to start with.
 
 ## Mazes
 
