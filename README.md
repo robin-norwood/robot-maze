@@ -2,6 +2,10 @@
 
 This is a simple project I used to teach basic programming concepts to middle school students. When printed, students can "program" their robots by writing in the provided spaces, and then test their program by using a token (with an arrow to indicate direction) to "run" the program.
 
+## Website
+
+The mazes used are [available online](http://robot-maze.kjhl.tech/)
+
 ## Learning objectives
 
 1. What is a program?
@@ -17,9 +21,9 @@ By doing "programming" with pencil and paper, we do away with the need for compu
 
 Time: 25-45 minutes
 
-1. Print out each map (landscape)
+1. Print out each maze (landscape)
   - 60#-80# Cardstock works better than normal 20# paper
-2. Provide students with maps, pencil, and a token with a marker to indicate direction
+2. Provide students with mazes, pencil, and a token with a marker to indicate direction
 3. Invite students to talk about how they might program a robot
   - What commands can you give your robot?
   - What happens when the robot hits a wall?
