@@ -1,3 +1,7 @@
+// License: https://creativecommons.org/publicdomain/zero/1.0/
+// Robin Norwood <robin.norwood@gmail.com>
+
+// Define maps
 var mapData = {
   'Intro Maze': [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -67,6 +71,7 @@ var mapData = {
   ]
 }
 
+// Map tile values to tile type
 var mapTiles = {
   0: 'tile',
   1: 'wall',
@@ -75,6 +80,7 @@ var mapTiles = {
 }
 
 function setupSelector() {
+  // Append each map to the map selector
   var selector = document.getElementById('mapSelect');
   Object.keys(mapData).forEach(function (mapName) {
     var optionEl = document.createElement('option');
@@ -83,21 +89,27 @@ function setupSelector() {
     selector.appendChild(optionEl);
   });
 
+  // When map selector is changed, update map
   selector.onchange = function (evt) {
-    createMap(evt.target.value);
+    updateMap(evt.target.value);
   }
-
 }
 
-function createMap(selectedMap) {
+function updateMap(selectedMap) {
+
+  // Update the map name header
   var mapName = document.getElementById('mapName');
   mapName.innerText = selectedMap;
 
   var map = document.getElementById('mapbody');
+
+  // Remove old map data, if any
   while (map.firstChild) {
     map.removeChild(map.firstChild);
   }
 
+  // Populate the map.
+  // Each item in mapData[selectedMap] becomes a <td> element.
   mapData[selectedMap].forEach(function (row) {
     var rowEl = document.createElement('tr');
     row.forEach(function (col) {
@@ -111,5 +123,5 @@ function createMap(selectedMap) {
 
 window.addEventListener("load", function(event) {
   setupSelector();
-  createMap('Intro Maze');
+  updateMap('Intro Maze');
 });

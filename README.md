@@ -1,6 +1,8 @@
 # Robot Maze
 
-This is a simple project I used to teach basic programming concepts to middle school students. When printed, students can "program" their robots by writing in the provided spaces, and then test their program by using a token (with an arrow to indicate direction) to "run" the program.
+This is a simple project I've used to teach basic programming concepts to middle school students. The idea is to teach concepts with pencil and paper, to avoid the need for computers. I've found that when you only have a short amount of time to introduce programming concepts, dealing with syntax errors and other distractions when using a real computer takes up a lot of the time you have. This exercise is meant to be completed in about 30-45 minutes.
+
+When each map is printed, students can "program" their robots by writing in the provided spaces, and then test their program by using a token (with an arrow to indicate direction) to "run" the program.
 
 ## Website
 
@@ -12,8 +14,8 @@ The mazes used are [available online](http://robot-maze.kjhl.tech/)
 2. Commands
 3. Loops
 4. Conditionals
-5. Using an algorithm vs. "brute force"
-6. Testing and debugging
+5. Testing and debugging
+6. Algorithms vs. "brute force"
 
 By doing "programming" with pencil and paper, we do away with the need for computers, and allow students to program in their own words without getting hung up on a specific programming language's syntax and rules, or worrying about making typos.
 
@@ -21,18 +23,23 @@ By doing "programming" with pencil and paper, we do away with the need for compu
 
 Time: 25-45 minutes
 
-1. Print out each maze (landscape)
+1. Visit the [project website](http://robot-maze.kjhl.tech/)
+2. Select each maze from the dropdown and print them out:
+  - landscape, black & white
   - 60#-80# Cardstock works better than normal 20# paper
-2. Provide students with mazes, pencil, and a token with a marker to indicate direction
-3. Invite students to talk about how they might program a robot
+  - Should work on A4 as well, but I haven't tested it
+3. Provide students with mazes, pencil, and a "robot" token with a marker to indicate direction
+4. Invite students to talk about how they might program a robot
   - What commands can you give your robot?
   - What happens when the robot hits a wall?
-4. Have the student solve each map in turn, introducing new concepts as described below, and talk about what they learned at each step.
+5. Have the student solve each map in turn, introducing new concepts as described below, and talk about what they learned at each step.
+6. When students solve a map, have them exchange solutions with others, so they can "test" their code. Talk about finding bugs. Talk about different ways to solve the same problem. Optionally talk about algorithms vs. brute force problem solving.
+7. One of the design goals is to not get hung up on syntax, so let students use their own words to program their robots.
 
 ### Further exploration
 
 1. Websites like [scratch](https://scratch.mit.edu/) and [hour of code](https://hourofcode.com/us) are good next steps.
-2. More advanced students can explore the code that generates the maps, and make their own changes.
+2. More advanced students can explore the code that generates the maps and make their own changes. The code can be downloaded from github, and I've tried to make it as simple and clear as possible.
   - Create your own map
   - Add a "pit" obstacle
   - Add a "drill" add-on that your robot can pick up and use once
@@ -91,7 +98,7 @@ do:
 - Invite students to brainstorm about how they might solve it with just a few lines of code
 - Have them write their programs, test/debug them, and compare them. How short can they make the program?
 - Many students will "brute force" this, and just write out the steps
-- Ideally at least one or two will discover the algorithm:
+- Ideally at least one or two will discover an algorithm to solve it efficiently.
   - A simple solution might be:
 ```
 Repeat:
